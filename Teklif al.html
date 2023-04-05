@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anasayfa</title>
+	
+	<style>
+        body {
+            background-color: rgba(132, 195, 178, 0.494);
+            background-position: center;
+            margin: 0;
+        }
+        
+        #menu {
+            position: fixed;
+            top: 3;
+            right: 0;
+            z-index: 1;
+            padding: 10px;
+            font-size: 32px;
+        }
+        
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        #menu li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        #menu a {
+            text-decoration: none;
+            color: rgba(115, 112, 112, 0.944);
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        
+        #menu a:hover {
+            background-color: rgba(15, 79, 60, 0.2);
+        }
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 80px;
+			margin-left: 35%;
+			margin-right: 50%;
+			width: 500px;
+		}
+
+		input[type=text], input[type=email] {
+			width: 300px;
+			height: 30px;
+			margin-top: px;
+			padding: 5px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+			font-size: 25px;
+		}
+
+		label {
+            padding: 5px;
+			margin-top: 45px;
+			font-size: 25px;
+			font-weight: bold;
+			color: #333;
+		}
+
+		input[type=checkbox]{
+			margin-right: 5px;
+		}
+
+		button[type=submit] {
+			background-color: #6b9778;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 17px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		button[type=submit]:hover {
+			background-color: #4c9370;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="Anasayfa.html">Anasayfa</a></li>
+			<li><a href="hakkımızda.html">Hakkımızda</a></li>
+		</ul>
+	</div>
+
+	<form>
+		<label for="ad">Adınız:</label>
+		<input type="text" id="ad" name="ad" required>
+<br>
+		<label for="soyad">Soyadınız:</label>
+		<input type="text" id="soyad" name="soyad" required>
+<br>
+        <label for="email">Mail Adresiniz:</label>
+		<input type="text" id="mail" name="soyad" required>   
+<br>
+<div style="text-align: center;">
+	<button type="submit">Gönder</button>
+
